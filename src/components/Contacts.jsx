@@ -72,7 +72,7 @@ function Contacts() {
           </button>
         </div>
         <div className={"error"}>
-          {values.error && "Заполните све поля валидно!"}
+          {values.error && "Заполните все поля валидно!"}
         </div>
       </div>
       {values.modal && (
