@@ -7,24 +7,24 @@ export const loadCertificates = (ApiKey) => {
       );
       const json = await res.json();
       dispatch({
-        type: 'certificates/load/success',
-        payload: json
-      })
+        type: "certificates/load/success",
+        payload: json,
+      });
     } catch (e) {
-      console.error(`Error: ${e}`)
+      console.error(`Error: ${e}`);
     }
   };
 };
 
 export const addCertificate = (certificate) => {
   return {
-    type: 'certificates/add',
-    payload: certificate
-  }
-}
+    type: "certificates/add",
+    payload: certificate,
+  };
+};
 
 export const toBack = () => {
   return {
-    type: 'certificates/back'
-  }
-}
+    type: "certificates/back",
+  };
+};

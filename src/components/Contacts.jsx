@@ -22,7 +22,7 @@ function Contacts() {
   };
 
   const handleBack = () => {
-    setValues({ ...values, error: false, modal: false});
+    setValues({ ...values, error: false, modal: false });
     dispatch(toBack());
     history.push("/");
   };
@@ -38,12 +38,11 @@ function Contacts() {
       setValues({ ...values, error: true });
       return;
     }
-    setValues({ ...values, error: false, modal: true});
+    setValues({ ...values, error: false, modal: true });
   };
 
   return (
     <div>
-      <h2 className={"main_title"}>Контакты для оплаты</h2>
       <div className={"contacts"}>
         <h4>Вы выбрали: {certificate.NAME}</h4>
         <input
